@@ -23,9 +23,6 @@ elem2 = find_and_send('password', 'K.,k.;bpym999')
 enter = send_button('signinTxt')
 
 """ IN EMAIL"""
-time.sleep(5)
-find_button = driver.find_element_by_xpath('/html/body/div[2]/div/div[3]/div[5]/div/div[1]/div/div[1]/div[2]/div/div[1]/div[2]/button/span[2]')
-find_button.click()
-find_button.send_keys(Keys.ENTER)
-driver.close()
+find_button = driver.find_element_by_xpath(
+    '//*[@title="BotagozZTU@halykbank.kz"]').click()
 # find_button.click()
